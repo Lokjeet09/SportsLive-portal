@@ -38,7 +38,7 @@ const appData = {
       id: 2,
       sport: "Football",
       team1: "XIMB Corvettes",
-      team2: "IIM Calcutta Tigers",
+      team2: "IIM Raipur Tigers",
       score1: 2,
       score2: 1,
       status: "Live",
