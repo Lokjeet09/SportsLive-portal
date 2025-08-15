@@ -18,8 +18,8 @@ const appData = {
     {"name": "IIM Sambalpur", "nickname": "Eagles", "fullName": "IIM Sambalpur Eagles"},
     {"name": "IIM Bodhgaya", "nickname": "Yellow Stars", "fullName": "IIM Bodhgaya Yellow Stars"},
     {"name": "XIMB Bhubaneswar", "nickname": "Corvettes", "fullName": "XIMB Corvettes"},
-    {"name": "IIM Calcutta", "nickname": "Tigers", "fullName": "IIM Calcutta Tigers"},
-    {"name": "FMS Delhi", "nickname": "Warriors", "fullName": "FMS Delhi Warriors"}
+    {"name": "IIM Raipur", "nickname": "Tigers", "fullName": "IIM Raipur Tigers"},
+    {"name": "KIIT", "nickname": "Warriors", "fullName": "KIIT Warriors"}
   ],
   matches: [
     {
@@ -61,7 +61,7 @@ const appData = {
       id: 4,
       sport: "Volleyball",
       team1: "IIM Bodhgaya Yellow Stars",
-      team2: "FMS Delhi Warriors",
+      team2: "KIIT Warriors",
       score1: 3,
       score2: 1,
       status: "Completed",
@@ -73,7 +73,7 @@ const appData = {
       id: 5,
       sport: "Table Tennis",
       team1: "Pooja Iyer (IIM Sambalpur Eagles)",
-      team2: "Kavya Menon (FMS Delhi Warriors)",
+      team2: "Kavya Menon (KIIT Warriors)",
       score1: "3-1",
       score2: "",
       status: "Completed",
@@ -84,19 +84,19 @@ const appData = {
     {
       id: 6,
       sport: "Badminton",
-      team1: "Sneha Reddy (IIM Calcutta Tigers)",
+      team1: "Sneha Reddy (IIM Raipur Tigers)",
       team2: "Ananya Sharma (IIM Bodhgaya Yellow Stars)",
       score1: "21-15, 21-18",
       score2: "",
       status: "Completed",
       day: 1,
       time: "3:30 PM",
-      winner: "Sneha Reddy (IIM Calcutta Tigers)"
+      winner: "Sneha Reddy (IIM Raipur Tigers)"
     },
     {
       id: 7,
       sport: "Chess",
-      team1: "Vikash Kumar (FMS Delhi Warriors)",
+      team1: "Vikash Kumar (KIIT Warriors)",
       team2: "Rajesh Nair (XIMB Corvettes)",
       score1: "1-0",
       score2: "",
@@ -133,7 +133,7 @@ const appData = {
     },
     {
       name: "Sneha Reddy",
-      college: "IIM Calcutta Tigers",
+      college: "IIM Raipur Tigers",
       sport: "Badminton",
       wins: 5,
       losses: 1,
@@ -141,7 +141,7 @@ const appData = {
     },
     {
       name: "Vikash Kumar",
-      college: "FMS Delhi Warriors",
+      college: "KIIT Warriors",
       sport: "Chess",
       wins: 4,
       losses: 0,
@@ -165,7 +165,7 @@ const appData = {
     },
     {
       name: "Kavya Menon",
-      college: "FMS Delhi Warriors",
+      college: "KIIT Warriors",
       sport: "Carrom",
       wins: 7,
       losses: 0,
@@ -173,7 +173,7 @@ const appData = {
     },
     {
       name: "Arun Patel",
-      college: "IIM Calcutta Tigers",
+      college: "IIM Raipur Tigers",
       sport: "Swimming",
       time: "1:45.32",
       strokes: "Freestyle",
@@ -191,7 +191,7 @@ const appData = {
   news: [
     {
       id: 1,
-      title: "Udgodh 2025 Opens with Grand Ceremony",
+      title: "Udghosh 2025 Opens with Grand Ceremony",
       content: "The inter-college sports fest Udgodh 2025 kicked off with a spectacular opening ceremony featuring cultural performances from all participating B-schools.",
       date: "2025-08-15",
       category: "Event"
@@ -220,14 +220,14 @@ const appData = {
     {
       id: 5,
       title: "Volleyball Action Heats Up",
-      content: "IIM Bodhgaya Yellow Stars dominated FMS Delhi Warriors 3-1 in an exciting volleyball match that kept spectators on the edge of their seats.",
+      content: "IIM Bodhgaya Yellow Stars dominated KIIT Warriors 3-1 in an exciting volleyball match that kept spectators on the edge of their seats.",
       date: "2025-08-15",
       category: "Match Result"
     },
     {
       id: 6,
       title: "Chess Master Vikash Kumar Continues Winning Streak",
-      content: "FMS Delhi's Vikash Kumar showcased exceptional chess skills with a perfect record of 4 wins and 0 losses in the tournament so far.",
+      content: "KIIT's Vikash Kumar showcased exceptional chess skills with a perfect record of 4 wins and 0 losses in the tournament so far.",
       date: "2025-08-15",
       category: "Player Spotlight"
     }
@@ -258,7 +258,7 @@ const appData = {
       points: 7
     },
     {
-      college: "IIM Calcutta Tigers",
+      college: "IIM Raipur Tigers",
       gold: 0,
       silver: 1,
       bronze: 1,
@@ -266,7 +266,7 @@ const appData = {
       points: 3
     },
     {
-      college: "FMS Delhi Warriors",
+      college: "KIIT Warriors",
       gold: 0,
       silver: 0,
       bronze: 1,
