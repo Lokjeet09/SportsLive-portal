@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udgodh 2025 - Inter-College Sports Festival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>🏆 Udgodh 2025</h1>
+                </div>
+                <nav class="nav">
+                    <button class="nav__item nav__item--active" data-page="home">Home</button>
+                    <button class="nav__item" data-page="schedule">Schedule</button>
+                    <button class="nav__item" data-page="live-scores">Live Scores</button>
+                    <button class="nav__item" data-page="results">Results</button>
+                    <button class="nav__item" data-page="player-stats">Player Stats</button>
+                    <button class="nav__item" data-page="news">News</button>
+                    <button class="nav__item" data-page="leaderboard">Leaderboard</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Home Page -->
+        <section id="home" class="page page--active">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero__title">Welcome to Udgodh 2025</h1>
+                    <p class="hero__subtitle">3 Days of Intense Competition • 12 Sports • 5 B-Schools</p>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="overview-card__icon">🎯</div>
+                        <h3>Day 1 Highlights</h3>
+                        <p>Opening ceremony, initial rounds in Basketball, Football, Volleyball, and indoor games.</p>
+                        <div class="overview-card__status">In Progress</div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-card__icon">🔥</div>
+                        <h3>Day 2 Preview</h3>
+                        <p>Main competition day with Tennis, Squash, Racing semifinals and knockout rounds.</p>
+                        <div class="overview-card__status status--upcoming">Upcoming</div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-card__icon">🏆</div>
+                        <h3>Day 3 Finals</h3>
+                        <p>All finals, closing ceremony and prize distribution.</p>
+                        <div class="overview-card__status status--upcoming">Upcoming</div>
+                    </div>
+                </div>
+
+                <div class="home-sections">
+                    <div class="home-section">
+                        <h2>🔴 Live Now</h2>
+                        <div class="live-matches">
+                            <div class="match-card match-card--live">
+                                <div class="match-card__teams">
+                                    <div class="team">XIMB Corvettes</div>
+                                    <div class="match-card__vs">vs</div>
+                                    <div class="team">IIM Calcutta Tigers</div>
+                                </div>
+                                <div class="match-card__score">2 - 1</div>
+                                <div class="match-card__sport">Football</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section">
+                        <h2>📊 Recent Results</h2>
+                        <div class="recent-results">
+                            <div class="result-item">
+                                <div class="result-item__sport">Basketball</div>
+                                <div class="result-item__match">IIM Sambalpur Eagles 78 - 65 IIM Bodhgaya Yellow Stars</div>
+                                <div class="result-item__winner">Winner: IIM Sambalpur Eagles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Page -->
+        <section id="schedule" class="page">
+            <div class="container">
+                <h1>Event Schedule</h1>
+                <div class="schedule-container">
+                    <div class="day-card">
+                        <div class="day-card__header">
+                            <h2>Day 1 - Opening & Initial Rounds</h2>
+                            <button class="day-card__toggle" data-day="day1">Expand</button>
+                        </div>
+                        <div class="day-card__content" id="day1-content">
+                            <div class="time-slot">
+                                <h3>Morning (8:00 AM - 12:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--ceremony">Opening Ceremony (Complete first half)</li>
+                                    <li class="event-item event-item--admin">Registration and team briefings</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Afternoon (2:00 PM - 6:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--match">Basketball: 2 matches (mixed teams)</li>
+                                    <li class="event-item event-item--match">Football: 2 matches (mixed teams)</li>
+                                    <li class="event-item event-item--match">Volleyball: 2 matches (mixed teams)</li>
+                                    <li class="event-item event-item--match">Table Tennis: 6 matches (boys vs boys, girls vs girls)</li>
+                                    <li class="event-item event-item--match">Badminton: 6 matches (boys vs boys, girls vs girls)</li>
+                                    <li class="event-item event-item--match">Chess: 8 matches (boys only)</li>
+                                    <li class="event-item event-item--match">Carrom: 4 matches (girls only)</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Evening (7:00 PM - 10:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--cultural">Cultural Night with performances</li>
+                                    <li class="event-item event-item--social">Welcome dinner</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day-card">
+                        <div class="day-card__header">
+                            <h2>Day 2 - Main Competition Day</h2>
+                            <button class="day-card__toggle" data-day="day2">Expand</button>
+                        </div>
+                        <div class="day-card__content hidden" id="day2-content">
+                            <div class="time-slot">
+                                <h3>Morning (8:00 AM - 12:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--match">Tennis: 4 matches (2 boys, 2 girls)</li>
+                                    <li class="event-item event-item--match">Squash: 4 matches (2 boys, 2 girls)</li>
+                                    <li class="event-item event-item--match">Pool: 4 matches (boys only)</li>
+                                    <li class="event-item event-item--match">Mixed Racing: Heats with mixed teams</li>
+                                    <li class="event-item event-item--match">Powerlifting: Boys & girls competitions</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Afternoon (2:00 PM - 6:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--match">Basketball: 1 semifinal (mixed teams)</li>
+                                    <li class="event-item event-item--match">Football: 1 semifinal (mixed teams)</li>
+                                    <li class="event-item event-item--match">Volleyball: 1 semifinal (mixed teams)</li>
+                                    <li class="event-item event-item--match">Table Tennis: Knockout rounds</li>
+                                    <li class="event-item event-item--match">Badminton: Knockout rounds</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Evening (7:00 PM - 11:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--social">DJ Night with dance floor</li>
+                                    <li class="event-item event-item--social">Late night snacks and socializing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day-card">
+                        <div class="day-card__header">
+                            <h2>Day 3 - Finals & Closing</h2>
+                            <button class="day-card__toggle" data-day="day3">Expand</button>
+                        </div>
+                        <div class="day-card__content hidden" id="day3-content">
+                            <div class="time-slot">
+                                <h3>Morning (8:00 AM - 12:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--final">Tennis Finals: Boys & girls</li>
+                                    <li class="event-item event-item--final">Squash Finals: Boys & girls</li>
+                                    <li class="event-item event-item--final">Table Tennis Finals: Boys & girls</li>
+                                    <li class="event-item event-item--final">Badminton Finals: Boys & girls</li>
+                                    <li class="event-item event-item--final">Chess Finals: Boys</li>
+                                    <li class="event-item event-item--final">Pool Finals: Boys</li>
+                                    <li class="event-item event-item--final">Carrom Finals: Girls</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Afternoon (2:00 PM - 5:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--final">Basketball Finals: Mixed teams</li>
+                                    <li class="event-item event-item--final">Football Finals: Mixed teams</li>
+                                    <li class="event-item event-item--final">Volleyball Finals: Mixed teams</li>
+                                    <li class="event-item event-item--final">Racing Finals: Mixed teams</li>
+                                    <li class="event-item event-item--final">Powerlifting Finals: Winners announcement</li>
+                                </ul>
+                            </div>
+                            <div class="time-slot">
+                                <h3>Evening (6:00 PM - 9:00 PM)</h3>
+                                <ul class="event-list">
+                                    <li class="event-item event-item--ceremony">Closing Ceremony</li>
+                                    <li class="event-item event-item--ceremony">Prize distribution and awards</li>
+                                    <li class="event-item event-item--cultural">Cultural performances</li>
+                                    <li class="event-item event-item--ceremony">Vote of thanks and farewell</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Scores Page -->
+        <section id="live-scores" class="page">
+            <div class="container">
+                <h1>Live Scores</h1>
+                <div class="scores-container">
+                    <div class="match-card match-card--live">
+                        <div class="match-card__status">LIVE</div>
+                        <div class="match-card__sport">Football</div>
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <div class="team__name">XIMB Corvettes</div>
+                                <div class="team__score">2</div>
+                            </div>
+                            <div class="match-card__vs">vs</div>
+                            <div class="team">
+                                <div class="team__name">IIM Calcutta Tigers</div>
+                                <div class="team__score">1</div>
+                            </div>
+                        </div>
+                        <div class="match-card__time">78' - 2nd Half</div>
+                    </div>
+
+                    <div class="match-card match-card--upcoming">
+                        <div class="match-card__status status--upcoming">UPCOMING</div>
+                        <div class="match-card__sport">Tennis</div>
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <div class="team__name">Arjun Sharma (FMS Warriors)</div>
+                            </div>
+                            <div class="match-card__vs">vs</div>
+                            <div class="team">
+                                <div class="team__name">Priya Patel (Eagles)</div>
+                            </div>
+                        </div>
+                        <div class="match-card__time">Day 2 - 8:00 AM</div>
+                    </div>
+
+                    <div class="match-card match-card--completed">
+                        <div class="match-card__status status--success">COMPLETED</div>
+                        <div class="match-card__sport">Basketball</div>
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <div class="team__name">IIM Sambalpur Eagles</div>
+                                <div class="team__score">78</div>
+                            </div>
+                            <div class="match-card__vs">vs</div>
+                            <div class="team">
+                                <div class="team__name">IIM Bodhgaya Yellow Stars</div>
+                                <div class="team__score">65</div>
+                            </div>
+                        </div>
+                        <div class="match-card__time">Day 1 - 2:00 PM</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Page -->
+        <section id="results" class="page">
+            <div class="container">
+                <h1>Match Results</h1>
+                <div class="filters">
+                    <select id="sport-filter" class="form-control">
+                        <option value="">All Sports</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Football">Football</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Volleyball">Volleyball</option>
+                        <option value="Table Tennis">Table Tennis</option>
+                        <option value="Badminton">Badminton</option>
+                    </select>
+                    <select id="day-filter" class="form-control">
+                        <option value="">All Days</option>
+                        <option value="1">Day 1</option>
+                        <option value="2">Day 2</option>
+                        <option value="3">Day 3</option>
+                    </select>
+                </div>
+                <div class="results-container">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Player Stats Page -->
+        <section id="player-stats" class="page">
+            <div class="container">
+                <h1>Player Statistics</h1>
+                <div class="stats-filters">
+                    <input type="text" id="player-search" class="form-control" placeholder="Search players...">
+                    <select id="college-filter" class="form-control">
+                        <option value="">All B-Schools</option>
+                        <option value="IIM Sambalpur Eagles">IIM Sambalpur Eagles</option>
+                        <option value="IIM Bodhgaya Yellow Stars">IIM Bodhgaya Yellow Stars</option>
+                        <option value="XIMB Corvettes">XIMB Corvettes</option>
+                        <option value="IIM Calcutta Tigers">IIM Calcutta Tigers</option>
+                        <option value="FMS Delhi Warriors">FMS Delhi Warriors</option>
+                    </select>
+                </div>
+
+                <div class="stats-section">
+                    <h2>Top Performers</h2>
+                    <div class="player-cards">
+                        <!-- Player cards will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Page -->
+        <section id="news" class="page">
+            <div class="container">
+                <h1>Latest News & Updates</h1>
+                <div class="news-container">
+                    <!-- News articles will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Page -->
+        <section id="leaderboard" class="page">
+            <div class="container">
+                <h1>Championship Leaderboard</h1>
+                <div class="leaderboard-container">
+                    <div class="leaderboard-table">
+                        <div class="table-header">
+                            <div class="table-cell">Rank</div>
+                            <div class="table-cell">B-School</div>
+                            <div class="table-cell">Gold</div>
+                            <div class="table-cell">Silver</div>
+                            <div class="table-cell">Bronze</div>
+                            <div class="table-cell">Total</div>
+                            <div class="table-cell">Points</div>
+                        </div>
+                        <div class="table-row table-row--first">
+                            <div class="table-cell">🥇 1</div>
+                            <div class="table-cell">
+                                <div>IIM Sambalpur</div>
+                                <div class="college-nickname">Eagles</div>
+                            </div>
+                            <div class="table-cell">2</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">4</div>
+                            <div class="table-cell">13</div>
+                        </div>
+                        <div class="table-row table-row--second">
+                            <div class="table-cell">🥈 2</div>
+                            <div class="table-cell">
+                                <div>IIM Bodhgaya</div>
+                                <div class="college-nickname">Yellow Stars</div>
+                            </div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">2</div>
+                            <div class="table-cell">0</div>
+                            <div class="table-cell">3</div>
+                            <div class="table-cell">9</div>
+                        </div>
+                        <div class="table-row table-row--third">
+                            <div class="table-cell">🥉 3</div>
+                            <div class="table-cell">
+                                <div>XIMB Bhubaneswar</div>
+                                <div class="college-nickname">Corvettes</div>
+                            </div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">0</div>
+                            <div class="table-cell">2</div>
+                            <div class="table-cell">3</div>
+                            <div class="table-cell">7</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">4</div>
+                            <div class="table-cell">
+                                <div>IIM Calcutta</div>
+                                <div class="college-nickname">Tigers</div>
+                            </div>
+                            <div class="table-cell">0</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">2</div>
+                            <div class="table-cell">3</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">5</div>
+                            <div class="table-cell">
+                                <div>FMS Delhi</div>
+                                <div class="college-nickname">Warriors</div>
+                            </div>
+                            <div class="table-cell">0</div>
+                            <div class="table-cell">0</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">1</div>
+                            <div class="table-cell">1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="points-info">
+                    <h3>Points System</h3>
+                    <p>Gold: 5 points • Silver: 3 points • Bronze: 1 point</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
